@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Druck — Portfólio</title>
+<meta name="description" content="Pedro Druck — Desenvolvedor fullstack e estudante de Engenharia de Software na UnB. Do firmware embarcado à interface, com projetos em uso real por uma ONG e por professores da UnB.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<script>
+  try {
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<canvas id="ascii-bg" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div id="top-sentinel" aria-hidden="true"></div>
+
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">pedro.druck<span class="cursor">_</span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo claro">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.5"/>
+        <path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.5 14.7A8.5 8.5 0 0 1 9.3 3.5a8.5 8.5 0 1 0 11.2 11.2Z"/>
+      </svg>
+    </button>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-portrait">
+        <img src="pedro-pixel.png" alt="Retrato de Pedro Druck em pixel art" width="807" height="752" loading="eager">
+        <div class="socials" aria-label="Redes sociais">
+          <a href="https://github.com/pedruck" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/pedro-druck-b4233b31a" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.91 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="mailto:pedrodmreis@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2.24V18h18V7.24l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.24Zm1.1-.24 7.9 5.93L19.9 7H4.1Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-text">
+      <div class="hero-num" aria-hidden="true">$ whoami</div>
+
+      <p class="eyebrow">Olá, eu sou</p>
+      <h1 class="hero-name">Pedro Druck</h1>
+      <p class="hero-role">Desenvolvedor Fullstack <span class="dot-sep">·</span> Engenharia de Software na UnB</p>
+      <p class="hero-tagline">Construo do firmware embarcado à interface — e o que eu entrego sai do laboratório: já roda em uma ONG de educação e é usado por professores da UnB.</p>
+
+      <div class="hero-ctas">
+        <a href="#experiencia" class="btn btn-primary">Ver meu trabalho</a>
+        <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+        <a href="Pedro_Druck_Curriculo.pdf" download class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          Baixar currículo
+        </a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value">1 ano</span>
+          <span class="stat-label">de experiência profissional</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">5 projetos</span>
+          <span class="stat-label">entregues, 3 já em uso real</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">Palestrante</span>
+          <span class="stat-label">Campus Party Brasília 2025</span>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <a href="#sobre" class="scroll-hint">
+          <span class="scroll-hint-cursor">_</span>
+          role para ver mais
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 SOBRE -->
+  <section class="section" id="sobre">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <div class="section-head-text">
+          <h2>Sobre mim</h2>
+          <p class="section-legend">Quem eu sou, onde estudo e o tipo de vaga que estou procurando agora.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <p class="about-bio">
+          Sou estudante de Engenharia de Software na Universidade de Brasília (UnB) e desenvolvedor fullstack,
+          com atuação que vai do firmware embarcado à interface. Minha experiência passa também por análise e
+          tratamento de dados e desenvolvimento de ferramentas de IA. Já passei por pesquisa acadêmica, liderança
+          de equipes em projetos reais e experiência profissional como desenvolvedor back-end, sempre buscando
+          levar o que construo do laboratório para uso real: do pipeline de dados e KPIs do meu projeto de
+          iniciação tecnológica e inovação (PIBITI) aos agentes de IA que já arquitetei, passando pela plataforma
+          desenvolvida em parceria com a ONG MoveEduca. Agora estou em busca de uma vaga de estágio ou júnior onde
+          eu possa continuar aprendendo e contribuindo com times de engenharia.
+        </p>
+
+        <dl class="facts">
+          <div class="fact">
+            <dt>Formação</dt>
+            <dd>Eng. de Software — UnB</dd>
+          </div>
+          <div class="fact">
+            <dt>Idiomas</dt>
+            <dd>Português (nativo), Inglês (fluente)</dd>
+          </div>
+          <div class="fact">
+            <dt>Buscando</dt>
+            <dd>Estágio / Vaga júnior</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="deepen">
+        <h3 class="deepen-title">No que eu quero me aprofundar</h3>
+        <ul class="tag-list">
+          <li class="tag">Machine learning</li>
+          <li class="tag">Sistemas embarcados &amp; IoT</li>
+          <li class="tag">Desenvolvimento web fullstack</li>
+          <li class="tag">Arquitetura de software</li>
+          <li class="tag">Open source</li>
+          <li class="tag">Programação competitiva</li>
+          <li class="tag">Métricas e visualização de dados</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 FERRAMENTAS -->
+  <section class="section" id="ferramentas">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <div class="section-head-text">
+          <h2>Ferramentas do dia a dia</h2>
+          <p class="section-legend">O que eu realmente uso para construir, agrupado por onde entra no trabalho — da linguagem ao teste.</p>
+        </div>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-group">
+          <h3 class="tool-group-title">Linguagens</h3>
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">C</li>
+            <li class="tag">C++</li>
+            <li class="tag">Java</li>
+            <li class="tag">HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="tool-group">
+          <h3 class="tool-group-title">Ferramentas de web e dados</h3>
+          <ul class="tag-list">
+            <li class="tag">React.js</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">FastAPI</li>
+            <li class="tag">Flask</li>
+            <li class="tag">Django</li>
+            <li class="tag">D3.js</li>
+            <li class="tag">MongoDB</li>
+            <li class="tag">APIs REST</li>
+            <li class="tag">API do GitHub</li>
+            <li class="tag">Engenharia de dados</li>
+          </ul>
+        </div>
+
+        <div class="tool-group">
+          <h3 class="tool-group-title">Infraestrutura e testes</h3>
+          <ul class="tag-list">
+            <li class="tag">Git / versionamento</li>
+            <li class="tag">pytest</li>
+            <li class="tag">Testes automatizados</li>
+            <li class="tag">Arquitetura limpa</li>
+            <li class="tag">KPIs de software</li>
+          </ul>
+        </div>
+
+        <div class="tool-group">
+          <h3 class="tool-group-title">Embarcados</h3>
+          <ul class="tag-list">
+            <li class="tag">ESP32</li>
+            <li class="tag">Arduino</li>
+            <li class="tag">Sensores / IoT</li>
+            <li class="tag">Firmware em C++</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 EXPERIÊNCIA -->
+  <section class="section" id="experiencia">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <div class="section-head-text">
+          <h2>Experiência</h2>
+          <p class="section-legend">Onde já atuei profissionalmente, o que já construí e os eventos em que estive.</p>
+        </div>
+      </div>
+
+      <!-- Experiência -->
+      <div class="subsection">
+        <h3 class="subsection-title">Experiência</h3>
+
+        <div class="job-card">
+          <div class="job-head">
+            <div>
+              <h4 class="job-title">PIBITI <span class="job-company">— Evolução Quantitativa de um Dashboard Open Source para Métricas e Análise de Colaboração em Projetos Acadêmicos de Software</span></h4>
+              <p class="job-contract">Projeto de Iniciação Tecnológica e Inovação (PIBITI) vinculado à UnB</p>
+            </div>
+            <div class="job-meta">
+              <span>Ago/2026 - atual</span>
+              <span>Brasília-DF · UnB</span>
+            </div>
+          </div>
+          <p class="job-desc">Evolução quantitativa de um dashboard open source que extrai dados de repositórios via API do GitHub e calcula KPIs de volume de atividades, revisão de código, colaboração e riscos, apresentados em visualizações interativas por organização, equipe e período.</p>
+          <p class="project-field"><strong>Meu papel:</strong> iniciação tecnológica: evolução do pipeline de engenharia de dados, cálculo dos indicadores e avaliação de integração com ferramentas de gestão como Notion, Jira e Trello.</p>
+          <p class="project-field project-impact"><strong>Impacto:</strong> analisa automaticamente todos os repositórios de uma org pública no GitHub, com uso validado por professores da UnB; meta de alta reprodutibilidade e testes automatizados para adoção por outras disciplinas.</p>
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+            <li class="tag">D3.js</li>
+            <li class="tag">API do GitHub</li>
+            <li class="tag">Engenharia de dados</li>
+            <li class="tag">pytest</li>
+          </ul>
+        </div>
+
+        <div class="job-card">
+          <div class="job-head">
+            <div>
+              <h4 class="job-title">Desenvolvedor Web <span class="job-company">— DW Corp LTDA</span></h4>
+              <p class="job-contract">Contrato de Aprendiz</p>
+            </div>
+            <div class="job-meta">
+              <span>Jan/2025 - Dez/2025 (1 ano)</span>
+              <span>Brasília-DF · Remoto</span>
+            </div>
+          </div>
+          <p class="job-desc">Atuei na criação e no desenvolvimento de soluções web pela DW Corp LTDA, principalmente na construção e no polimento do back-end de aplicações web.</p>
+          <ul class="tag-list">
+            <li class="tag">JavaScript</li>
+            <li class="tag">MongoDB</li>
+            <li class="tag">Back-end</li>
+            <li class="tag">Desenvolvimento web</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projetos -->
+      <div class="subsection">
+        <h3 class="subsection-title">Projetos</h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-tag">DevTools · Agentes de IA</span>
+            <h4 class="project-title">SeamWork — Pipeline de Testabilidade com Agentes de IA</h4>
+            <p class="project-desc">Projeto open source nascido no hackathon do IBM TechXchange 2026. Pipeline construído sobre o IBM Bob em que agentes de IA detectam barreiras de testabilidade em pull requests e geram os testes automaticamente, com rastreamento no IBM Cloudant.</p>
+            <p class="project-field"><strong>Meu papel:</strong> planejamento da arquitetura do projeto e construção de skills e orquestradores para os agentes de IA (geração de testes, análise de suítes de teste, heurísticas de testabilidade e revisão de PRs).</p>
+            <p class="project-field project-impact"><strong>Impacto:</strong> overhead de apenas 4,4% de mudança em produção para tornar o código testável (32 linhas de produção para 729 linhas de funcionalidade).</p>
+            <ul class="tag-list">
+              <li class="tag">IBM Bob</li>
+              <li class="tag">Agentes de IA</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">IBM Cloudant</li>
+              <li class="tag">GitHub Actions</li>
+            </ul>
+            <a href="https://github.com/SCCB-Software-Craftsmanship/IBM-TechXchange-2026-hackaton" target="_blank" rel="noopener" class="project-link">Ver repositório <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://site-six-blond-88.vercel.app/#github" target="_blank" rel="noopener" class="project-link">Ver demo ao vivo <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Web · Dados</span>
+            <h4 class="project-title">CoOps — Ferramenta de Visualização de Métricas de Colaboração no GitHub</h4>
+            <p class="project-desc">Projeto da disciplina Métodos de Desenvolvimento de Software (UnB). Ferramenta que visualiza e interpreta métricas de colaboração no GitHub, de repositórios individuais a organizações inteiras, com apoio de agentes de IA para explicar os resultados.</p>
+            <p class="project-field"><strong>Meu papel:</strong> contribuição em equipe grande da disciplina, com atuação relevante no desenvolvimento de funcionalidades e nas visualizações de dados.</p>
+            <p class="project-field project-impact"><strong>Impacto:</strong> pipeline de extração de dados otimizado de 4h para 30s; ferramenta capaz de analisar métricas de colaboração de organizações inteiras no GitHub; uso validado por professores da UnB e da UDF.</p>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">React.js</li>
+              <li class="tag">D3.js</li>
+            </ul>
+            <a href="https://github.com/unb-mds/2025-2-Squad-01" target="_blank" rel="noopener" class="project-link">Ver repositório <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Web · Fullstack</span>
+            <h4 class="project-title">DoaNet — Plataforma White Label para ONGs</h4>
+            <p class="project-desc">Projeto da disciplina Requisitos de Software (UnB/FCTE). Plataforma white label para organizações sem fins lucrativos, em parceria com a ONG MoveEduca, que aproxima organizações sociais de seus apoiadores centralizando comunicação, voluntariado, doações e prestação de contas em um único aplicativo.</p>
+            <p class="project-field"><strong>Meu papel:</strong> líder da equipe na disciplina, conduziu o time e a interlocução com a ONG parceira.</p>
+            <p class="project-field project-impact"><strong>Impacto:</strong> utilizado por uma ONG real do setor de educação.</p>
+            <ul class="tag-list">
+              <li class="tag">Liderança de equipe</li>
+              <li class="tag">Desenvolvimento web</li>
+              <li class="tag">Engenharia de requisitos</li>
+              <li class="tag">Gestão de projetos</li>
+            </ul>
+            <a href="https://github.com/mdsreq-fga-unb/REQ-2026.1-T01-DoaNet" target="_blank" rel="noopener" class="project-link">Ver repositório <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Back-end</span>
+            <h4 class="project-title">LabTechUDF — Sistema de Gestão e Reserva de Salas</h4>
+            <p class="project-desc">Sistema de gerenciamento das salas da UDF, fornecendo gestão da disponibilidade e reserva dos espaços presentes na faculdade.</p>
+            <p class="project-field"><strong>Meu papel:</strong> desenvolvedor back-end, contribuindo para a construção de APIs REST e GraphQL, além de responsável pelo sistema de backpressure da plataforma (controle de requisições usando RabbitMQ e Redis).</p>
+            <p class="project-field project-impact"><strong>Impacto:</strong> desenvolvido em um laboratório de software da UDF; uso comprovado e validado por profissionais da UDF.</p>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Back-end</li>
+              <li class="tag">APIs REST</li>
+              <li class="tag">GraphQL</li>
+              <li class="tag">RabbitMQ</li>
+              <li class="tag">Redis</li>
+              <li class="tag">pytest</li>
+            </ul>
+            <a href="https://github.com/LabTechUDF/python-services" target="_blank" rel="noopener" class="project-link">Ver repositório <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">Sistemas Embarcados · IoT</span>
+            <h4 class="project-title">ESP32 Plant Humidity — Monitoramento de Umidade de Plantas</h4>
+            <p class="project-desc">ESP32 lê sensor de umidade, envia o estado para uma API FastAPI, exposto em uma interface Flask.</p>
+            <p class="project-field"><strong>Meu papel:</strong> projeto individual — firmware, back-end e interface.</p>
+            <ul class="tag-list">
+              <li class="tag">ESP32 / Arduino</li>
+              <li class="tag">C++</li>
+              <li class="tag">Python</li>
+              <li class="tag">FastAPI</li>
+              <li class="tag">Flask</li>
+              <li class="tag">pytest</li>
+            </ul>
+            <a href="#" class="project-link">Ver repositório <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Eventos -->
+      <div class="subsection">
+        <h3 class="subsection-title">Eventos, palestras e certificados</h3>
+
+        <div class="event-grid">
+          <article class="event-card event-card-featured">
+            <div class="event-head">
+              <span class="badge badge-featured">Palestrante</span>
+              <span class="event-date">Jun/2025</span>
+            </div>
+            <h4 class="event-title">Campus Party Brasília 2025</h4>
+            <p class="event-org">Campus Party Brasil</p>
+            <p class="event-desc">Atuação como palestrante (speaker) na edição de Brasília do maior evento de tecnologia e inovação do país. Certificado oficial de palestrante.</p>
+            <ul class="tag-list">
+              <li class="tag">Desenvolvimento de software</li>
+              <li class="tag">Comunicação técnica</li>
+            </ul>
+          </article>
+
+          <article class="event-card">
+            <div class="event-head">
+              <span class="badge">Competidor</span>
+              <span class="event-date">Nov/2025</span>
+            </div>
+            <h4 class="event-title">XIII Maratona UnB de Programação</h4>
+            <p class="event-org">Universidade de Brasília</p>
+            <p class="event-desc">Participação na maratona de programação da UnB, resolvendo problemas algorítmicos sob restrição de tempo. Certificado oficial de participação.</p>
+            <ul class="tag-list">
+              <li class="tag">C</li>
+              <li class="tag">Programação competitiva</li>
+              <li class="tag">Algoritmos</li>
+            </ul>
+            <p class="event-credential">Credencial: <code>c160aaec96</code></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 CONTATO -->
+  <section class="section" id="contato">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <div class="section-head-text">
+          <h2>Contato</h2>
+          <p class="section-legend">Os canais onde eu respondo. Email é o mais rápido.</p>
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <p class="contact-invite">Aberto a oportunidades de estágio e vagas júnior. Vamos conversar?</p>
+        <div class="contact-links">
+          <a href="mailto:pedrodmreis@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm0 2.24V18h18V7.24l-8.4 6.3a1 1 0 0 1-1.2 0L3 7.24Zm1.1-.24 7.9 5.93L19.9 7H4.1Z"/></svg>
+            pedrodmreis@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/pedro-druck-b4233b31a" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.91 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/pedruck" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Feito por Pedro Druck <span class="dot-sep">·</span> <span id="year">2026</span></p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="ascii-bg.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

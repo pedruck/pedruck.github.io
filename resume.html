@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Pedro Druck — Currículo</title>
+<style>
+  @page { size: Letter; margin: 0.4in 0.55in; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Times New Roman', Georgia, 'Liberation Serif', serif;
+    font-size: 9.7pt;
+    line-height: 1.18;
+    color: #000;
+  }
+  .header { text-align: center; margin-bottom: 8pt; }
+  .name { font-size: 20pt; font-weight: 700; letter-spacing: 0.3px; margin-bottom: 2pt; }
+  .contact { font-size: 9.4pt; }
+  .contact a, .contact span.link { text-decoration: underline; }
+  .contact .sep { margin: 0 5pt; }
+
+  h2.section {
+    font-variant: small-caps;
+    font-size: 11.2pt;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #000;
+    margin: 5pt 0 2.5pt;
+    padding-bottom: 1pt;
+  }
+  h2.section:first-of-type { margin-top: 0; }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8pt;
+  }
+  .row .left strong { font-weight: 700; }
+  .row .right { white-space: nowrap; font-size: 9.8pt; }
+  .subrow { display: flex; justify-content: space-between; font-style: italic; font-size: 9.6pt; margin-bottom: 1.5pt; }
+
+  ul.bullets { margin: 1.5pt 0 4pt; padding-left: 13pt; }
+  ul.bullets li { margin-bottom: 0.5pt; }
+
+  .entry { margin-bottom: 3.5pt; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .skills-line { margin-bottom: 2.5pt; }
+  .skills-line strong { font-weight: 700; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="name">Pedro Druck</div>
+    <div class="contact">
+      pedrodmreis@gmail.com
+      <span class="sep">|</span><a href="https://www.linkedin.com/in/pedro-druck-b4233b31a">linkedin.com/in/pedro-druck</a>
+      <span class="sep">|</span><a href="https://github.com/pedruck">github.com/pedruck</a>
+    </div>
+  </div>
+
+  <h2 class="section">Experiência</h2>
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>DW Corp LTDA</strong></div>
+      <div class="right">Jan 2025 &ndash; Dez 2025</div>
+    </div>
+    <div class="subrow">
+      <div>Desenvolvedor Web &middot; Contrato de Aprendiz</div>
+      <div>Bras&iacute;lia, DF &middot; Remoto</div>
+    </div>
+    <ul class="bullets">
+      <li>Atua&ccedil;&atilde;o na cria&ccedil;&atilde;o e no desenvolvimento de solu&ccedil;&otilde;es web pela DW Corp LTDA, principalmente na constru&ccedil;&atilde;o e no polimento do <strong>back-end</strong> de aplica&ccedil;&otilde;es web, utilizando <strong>JavaScript</strong> e <strong>MongoDB</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>PIBITI</strong></div>
+      <div class="right">Ago 2026 &ndash; atual</div>
+    </div>
+    <div class="subrow">
+      <div>Projeto de Inicia&ccedil;&atilde;o Tecnol&oacute;gica e Inova&ccedil;&atilde;o (PIBITI) vinculado &agrave; UnB</div>
+      <div>Bras&iacute;lia, DF &middot; UnB</div>
+    </div>
+    <ul class="bullets">
+      <li><em>Evolu&ccedil;&atilde;o Quantitativa de um Dashboard Open Source para M&eacute;tricas e An&aacute;lise de Colabora&ccedil;&atilde;o em Projetos Acad&ecirc;micos de Software.</em> Extrai dados de reposit&oacute;rios via <strong>API do GitHub</strong> e calcula <strong>KPIs</strong> de volume de atividades, revis&atilde;o de c&oacute;digo, colabora&ccedil;&atilde;o e riscos, em visualiza&ccedil;&otilde;es interativas por organiza&ccedil;&atilde;o, equipe e per&iacute;odo.</li>
+      <li>Analisa automaticamente todos os reposit&oacute;rios de uma organiza&ccedil;&atilde;o p&uacute;blica no GitHub, com <strong>uso validado por professores da UnB</strong>.</li>
+    </ul>
+  </div>
+
+  <h2 class="section">Educa&ccedil;&atilde;o</h2>
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>Universidade de Bras&iacute;lia (UnB)</strong></div>
+      <div class="right">Em andamento</div>
+    </div>
+    <div class="subrow">
+      <div>Bacharelado em Engenharia de Software</div>
+      <div>Bras&iacute;lia, DF</div>
+    </div>
+  </div>
+
+  <h2 class="section">Projetos</h2>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>SeamWork &mdash; Pipeline de Testabilidade com Agentes de IA</strong> <span style="font-style:italic">| IBM Bob, TypeScript, IBM Cloudant, GitHub Actions</span></div>
+    </div>
+    <ul class="bullets">
+      <li>Projeto open source nascido no <strong>hackathon do IBM TechXchange 2026</strong>: agentes de IA sobre o IBM Bob detectam barreiras de testabilidade em pull requests e geram os testes automaticamente.</li>
+      <li>Planejamento da <strong>arquitetura do projeto</strong> e constru&ccedil;&atilde;o de skills e orquestradores para os agentes; overhead de <strong>4,4%</strong> de mudan&ccedil;a em produ&ccedil;&atilde;o para tornar o c&oacute;digo test&aacute;vel.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>CoOps &mdash; Ferramenta de Visualiza&ccedil;&atilde;o de M&eacute;tricas de Colabora&ccedil;&atilde;o no GitHub</strong> <span style="font-style:italic">| Python, TypeScript, React.js, D3.js</span></div>
+    </div>
+    <ul class="bullets">
+      <li>Projeto da disciplina <strong>M&eacute;todos de Desenvolvimento de Software</strong> (UnB): ferramenta que visualiza e interpreta m&eacute;tricas de colabora&ccedil;&atilde;o no GitHub, de reposit&oacute;rios individuais a organiza&ccedil;&otilde;es inteiras, com apoio de agentes de IA.</li>
+      <li>Contribui&ccedil;&atilde;o em equipe grande da disciplina; <strong>pipeline de extra&ccedil;&atilde;o de dados otimizado de 4h para 30s</strong>; uso validado por professores da <strong>UnB e da UDF</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>DoaNet &mdash; Plataforma White Label para ONGs</strong> <span style="font-style:italic">| Lideran&ccedil;a de equipe, Desenvolvimento web</span></div>
+    </div>
+    <ul class="bullets">
+      <li><strong>Liderou a equipe</strong> no desenvolvimento de uma plataforma white label para ONGs, em parceria com a ONG MoveEduca, aproximando organiza&ccedil;&otilde;es sociais de seus apoiadores ao centralizar comunica&ccedil;&atilde;o, voluntariado, doa&ccedil;&otilde;es e presta&ccedil;&atilde;o de contas.</li>
+      <li>Plataforma <strong>utilizada por uma ONG real</strong> do setor de educa&ccedil;&atilde;o.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>LabTechUDF &mdash; Sistema de Gest&atilde;o e Reserva de Salas</strong> <span style="font-style:italic">| Python, APIs REST, GraphQL, RabbitMQ, Redis, pytest</span></div>
+    </div>
+    <ul class="bullets">
+      <li>Sistema de gerenciamento das salas da UDF: desenvolvedor <strong>back-end</strong>, contribuindo para APIs <strong>REST</strong> e <strong>GraphQL</strong>.</li>
+      <li>Respons&aacute;vel pelo sistema de <strong>backpressure</strong> da plataforma, controlando requisi&ccedil;&otilde;es com <strong>RabbitMQ</strong> e <strong>Redis</strong>.</li>
+      <li>Desenvolvido em um <strong>laborat&oacute;rio de software da UDF</strong>; uso comprovado e validado por profissionais da UDF.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>ESP32 Plant Humidity &mdash; Monitoramento de Umidade de Plantas</strong> <span style="font-style:italic">| ESP32, C++, Python, FastAPI, Flask</span></div>
+    </div>
+    <ul class="bullets">
+      <li>Projeto individual: <strong>firmware em C++</strong> no ESP32 para leitura de sensor de umidade, API em <strong>FastAPI</strong> e interface em <strong>Flask</strong>.</li>
+    </ul>
+  </div>
+
+  <h2 class="section">Habilidades T&eacute;cnicas</h2>
+  <div class="skills-line"><strong>Linguagens:</strong> Python, JavaScript, TypeScript, C, C++, Java, HTML/CSS</div>
+  <div class="skills-line"><strong>Web &amp; Dados:</strong> React.js, Node.js, FastAPI, Flask, Django, D3.js, MongoDB, APIs REST, API do GitHub</div>
+  <div class="skills-line"><strong>Infraestrutura:</strong> Git, pytest, Testes automatizados, Arquitetura limpa</div>
+  <div class="skills-line"><strong>Embarcados:</strong> ESP32, Arduino, Sensores/IoT, Firmware em C++</div>
+
+  <h2 class="section">Eventos &amp; Reconhecimentos</h2>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>Campus Party Bras&iacute;lia 2025</strong> &mdash; Palestrante <span style="font-style:italic">| Campus Party Brasil</span></div>
+      <div class="right">Jun 2025</div>
+    </div>
+    <ul class="bullets">
+      <li>Atua&ccedil;&atilde;o como palestrante na edi&ccedil;&atilde;o de Bras&iacute;lia do maior evento de tecnologia e inova&ccedil;&atilde;o do pa&iacute;s.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <div class="left"><strong>XIII Maratona UnB de Programa&ccedil;&atilde;o</strong> &mdash; Competidor <span style="font-style:italic">| Universidade de Bras&iacute;lia</span></div>
+      <div class="right">Nov 2025</div>
+    </div>
+    <ul class="bullets">
+      <li>Participa&ccedil;&atilde;o resolvendo problemas algor&iacute;tmicos sob restri&ccedil;&atilde;o de tempo. Credencial: c160aaec96.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
